@@ -535,3 +535,13 @@ img {
  
 }
 }
+.download_CV
+{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color:#DFF5FF;
+  padding: 20px;
+  border-style: #3E6FF4;
+  border-width: 2px;
+  border-radius: 5px;
+  
+}

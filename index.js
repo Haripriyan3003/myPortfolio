@@ -59,6 +59,28 @@ function send() {
    var customer_Name = Document.review.Name.value;
    var customer_MailID = Document.review.Email.value;
    var customer_review = Document.review.message.value;
-}
+
 console.log(customer_Name);
 console.log(customer_review);
+document.getElementById
+(contact__form).addEventListener
+('submit',function (event)
+{
+    event.preventDefault();
+    var data = new FormData(event.target);
+    fetch("https://formspree.io/f/xzbnazkp",{
+        method:'POST',
+        body:data,
+    }).then(response =>{
+        if(response.ok)
+        {
+            alert('Success');
+        }
+        else
+        {
+            alert('Error')
+        }
+    });
+    document.getElementById('contact__form').reset();
+})
+}
